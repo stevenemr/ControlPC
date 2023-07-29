@@ -1,17 +1,14 @@
-from tkinter import *
 import mousecontrol as mc
+from tkinter import *
 
-view = Tk()
+view = Tk.tk()
 view.title("ControlPC")
 
 appTitle = Label(text="ControlPC",
                  font=("Arial", 26))
 appTitle.pack()
 
-mouseimg = PhotoImage(file="img/mouse.png")
+startstop = Button(text="Start / Stop")
+startstop.pack()
 
-moveButton = Button(command=mc.func,
-                    image=mouseimg)
-moveButton.pack()
-
-view.mainloop()
+view.mainloop() 
